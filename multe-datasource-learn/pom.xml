@@ -13,6 +13,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>multe-datasource-subpackage</module>
+        <module>multe-datasource-jta-atomikos</module>
     </modules>
     <packaging>pom</packaging>
 
