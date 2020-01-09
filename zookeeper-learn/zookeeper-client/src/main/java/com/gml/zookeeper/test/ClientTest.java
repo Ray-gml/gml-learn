@@ -42,4 +42,27 @@ public class ClientTest {
         System.out.println(new String(data));
     }
 
+    @Test
+    public void getData2() throws KeeperException, InterruptedException {
+        byte[] data = zooKeeper.getData("/test", true, null);
+        System.out.println(data);
+        Thread.sleep(Long.MAX_VALUE);
+    }
+
+    @Test
+    public void getData3() throws KeeperException, InterruptedException {
+        byte[] data = zooKeeper.getData("/test", new Watcher() {
+            public void process(WatchedEvent watchedEvent) {
+                try {
+                    zooKeeper.getData(watchedEvent.getPath(), this, null);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                System.out.println(watchedEvent.getPath());
+            }
+        }, null);
+        System.out.println(new String(data));
+        Thread.sleep(Long.MAX_VALUE);
+    }
+
 }
