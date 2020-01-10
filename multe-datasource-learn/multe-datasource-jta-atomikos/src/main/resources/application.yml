@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    test1:
+      url: jdbc:mysql://10.0.10.118:3306/test1?Unicode=true&characterEncoding=UTF-8&useSSL=true
+      username: root
+      password: 123456
+      minPoolSize: 3
+      maxPoolSize: 25
+      maxLifetime: 20000
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+
+    test2:
+      url: jdbc:mysql://10.0.10.118:3306/test2?Unicode=true&characterEncoding=UTF-8&useSSL=true
+      username: root
+      password: 123456
+      minPoolSize: 3
+      maxPoolSize: 25
+      maxLifetime: 20000
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60

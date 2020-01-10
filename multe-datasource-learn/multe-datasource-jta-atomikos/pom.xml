@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gml</groupId>
-    <artifactId>multe-datasource-subpackage</artifactId>
+    <artifactId>multe-datasource-jta-atomikos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>multe-datasource-subpackage</name>
+    <name>multe-datasource-jta-atomikos</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -29,11 +29,14 @@
             <version>2.1.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jta-atomikos</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
