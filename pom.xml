@@ -10,6 +10,7 @@
     <modules>
         <module>zookeeper-learn</module>
         <module>multe-datasource-learn</module>
+        <module>excel-poi</module>
     </modules>
     <packaging>pom</packaging>
 

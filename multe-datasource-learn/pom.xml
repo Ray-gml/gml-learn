@@ -14,6 +14,7 @@
     <modules>
         <module>multe-datasource-subpackage</module>
         <module>multe-datasource-jta-atomikos</module>
+        <module>multe-datasource-dynamic</module>
     </modules>
     <packaging>pom</packaging>
 
